@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "Shilpa-Kala",
+    "slug": "shilpa-kala",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFF8F0"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses camera to capture product photos.",
+        "NSPhotoLibraryUsageDescription": "This app saves branded photos to your gallery."
+      }
+    },
+    "android": {
+      "package": "com.shilpakala.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFF8F0"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Shilpa-Kala to access your camera."
+        }
+      ]
+    ]
+  }
+}
